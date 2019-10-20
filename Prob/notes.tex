@@ -1,0 +1,240 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\title{Math2}
+\author{Keith Goh}
+\begin{document}
+\maketitle
+
+\section{W1C1}
+Permutation
+$$
+nx(n-1)x...x(n-k+1)=\frac{n!}{n-k!}=:P^n_k
+$$
+This is the number of ways to choose and arrange k distinct objects from n distinct objects(order of picking matters)This is because we want them to fill up some unique positions\\
+permutation without repetition if there are identical objects then we must divide by the number of  identical factorial
+$$
+\frac{n!}{n_1!n_2!....n_r!}
+$$
+where $n_r$  is the number of identical objects \\
+If order does not matter when we pick our objects then we use
+$$
+{n \choose k} = C^n_k=\frac{P^n_k}{k!}=\frac{n!}{k!(n-k)!}
+$$
+Remember the slotting method when you are arranging objects such that no 2 of a type are beside each other.\\
+divide n distinct objects into r diff piles of size n1,n2
+$$
+{n \choose n_1}{n-n_1 \choose n_2}=\frac{n!}{n_1!n_2!...n_r!}
+$$
+\section{w1c2}
+$$
+(a+b)^n=\sum_{k=0}^n{n \choose k}a^kb^{n-k}
+$$
+counting given n distinct objects find the arrangements of k of them where order does not matter but repetitions are allowed\\
+Multichoose
+$$
+{k+n-1 \choose n-1}
+$$
+n-1 is number of bars\\
+we can think of it as having k+n-1 objects and n-1 will transform into the bars.\\
+Circular symmetry
+$$
+\frac{n!}{n}
+$$
+\begin{enumerate}
+  \item Remember when counting 2 separate cases make sure they are unique before adding unless minus the intersection
+  \item Check complements sometimes, its easier to do
+  \item when you splitting into equal unlabeled piles rmb to divide by n!, n being the number of piles after doing choosing.
+  \item alternative general formula $\frac{n!}{h!^kk!}$
+\end{enumerate}
+Extra:\\
+Multinomial Theorem
+$$
+(x_1+x_2+x_3...x_k)^n=\sum_{B_1+b_2...b_k=n}{n \choose b_1,b_2,b_3,....b_k}\prod_{j=1}^kx^{b_j}_j
+$$
+\section{w2c1}
+Axioms of probability
+\begin{enumerate}
+  \item 0$\leq P(E)\leq 1$
+  \item P(S)=1
+  \item $P(\bigcup_{i=1}^{\infty}E_i)=\sum_{i=1}^{\infty}P(E_i)$
+\end{enumerate}
+Axiom 3 finite version\\
+$$
+\mathbb{P}(\bigcup_{i=1}^{n}E_i)=\sum_{i=1}^n\mathbb{P}{E_i}
+$$
+inclusion exclusion
+$$
+\mathbb{P}(A \cup B)=\mathbb{P}A+\mathbb{P}B-\mathbb{P}{A\cap B}
+$$
+$$
+\mathbb{P}(A\cup B \cup C )=\mathbb{P}(A)+\mathbb{P}(B)+P(C)-\mathbb{P}(A\cap B)- \mathbb{P}(B\cap C)-\mathbb{P}(C\cap A)+\mathbb{P}(A\cap B \cap C)
+$$
+\section{W2C2}
+Hypergeometric distribution\\
+$$
+\mathbb {P}(\text{r men on a committee of k people})=\frac{{n \choose r}{m \choose k-r}}{{n+m \choose k}}
+$$
+Arithmetic Series
+$$
+1+2+3+...+n=\frac{n(n+1)}{2}
+$$
+Taylor Series for $e^x$
+$$
+\sum_{n=0}^{\infty}\frac{x^n}{n!}=e^x
+$$
+Geometric Series
+$$
+1+r+r^2+...+r^{n-1}=\frac{1-r^n}{1-r}
+$$
+
+if $|r|<$1 and $n\rightarrow \infty$,
+$$
+1+r+r^2+...=\frac{1}{1-r}
+$$
+$$
+P(d,n)=1-(1-\frac{1}{d})(1-\frac{2}{d})....(1-\frac{n-1}{d})
+$$
+this equations to
+$$
+P(d,n)\approx 1-e^{1/d}e^{-2/d}....e^{-(n-1)/d}
+$$
+when using the identity $e^{-x}\approx 1-x$
+Derangement
+$$
+D_n=n!(1-\frac{1}{1!}+\frac{1}{2!}-\frac{1}{3!}+...+(-1)^n\frac{1}{n!})
+$$
+$$
+D_n=(n-1)(D_{n-1}+D_{n-2})
+$$
+\section{w3C1}
+Definition(conditional Probability)\\
+if P(B)$>$0, then
+$$
+\mathbb{P}(A|B):=\frac{\mathbb{P}{(A \cap B)}}{\mathbb{P}(B)}
+$$
+hence
+$$
+\mathbb{P}(A \cap B)=\mathbb{P}(B)\mathbb{P}(A|B)=\mathbb{P}(A)\mathbb{P}(B|A)
+$$
+which allows us to multiply probabilities \\
+interesting result which is proven from the definition of conditional probability\\
+\includegraphics[width=\textwidth]{different}
+Law of total probability
+$$
+\mathbb{P}(A)=\mathbb{P}(B_1)\mathbb{P}(A|B_1)+\mathbb{P}(B_2)\mathbb{P}(A|B_2)+...+\mathbb{P}(B_n)\mathbb{P}(A|B_n)
+$$
+\section {W3C2}
+Bayes' Law(Bae's)
+$$
+\mathbb{P}(A|B)=\frac{\mathbb{P}{(B|A)}\mathbb{P}{(A)}}{\mathbb{P}(B)}
+$$
+Independent
+$$
+\mathbb{P}(A|B)=\mathbb P (A)
+$$
+$$
+\mathbb P (B|A)=\mathbb P (B)
+$$
+$$
+\mathbb P (A\cap B)=\mathbb P (A) \mathbb P (B)
+$$
+Three events are independent if they are pairwise independent and
+$$
+\mathbb P (A\cap B \cap C)=\mathbb P(A)\mathbb P(B) \mathbb P(C)
+$$
+\section{W4C1}
+$$
+\mathbb P_B(A):=\mathbb P(A|B)
+$$
+$E_1$ and $E_2$ are said to be conditionally independent if
+$$
+\mathbb P_B(E_1 \cap E_2)=\mathbb P_B(E_1)\mathbb P_B(E_2)
+$$
+or
+$$
+\mathbb P((E_1 \cap E_2)|B)=\mathbb P(E_1|B)\mathbb P(E_2|B)
+$$
+Geometric distribution:\\
+Probability first tail appear on the n toss
+$$
+(1-p)^{n-1}p
+$$
+Binomial distribution\\
+Toss a weighted coin (with $\mathbb P(T)=P$)n times;what is the probability exactly n tails are obtained
+$$
+\mathbb{P}(\text{exactly k tails})={n \choose k }p^k(1-p)^{n-k}
+$$
+A before B
+$$
+\mathbb P{\text{(A before B)}}=a+ca+c^2a+....
+$$
+$$
+=\frac{a}{1-c}=\frac{a}{a+b}
+$$
+Player A needs n points to win and player B needs m points to win\\
+First we assume the maximum length of game to n+m-1 is played and then we limit this to a binomial distribution that counts the number of games that are n points or greater.\\
+This is because as long as A wins n games then B cannot possibly win enough games to win and hence this is equivalent to A winning the normal unextended game. It includes all combinations of how the arrangement of how A can get N games first before B wins.\\
+Those that he wins already and continues playing will cancel out each other.(1-p)(p)=1\\
+$$
+P(n,m)=\sum_{k=n}^{m+n-1}{m+n-1 \choose k}p^k(1-p)^{m+n-1-k}
+$$
+Gamblers Ruin\\
+First try to make the question into a kinda recursion based form.\\
+Then simplify it using the extremes.
+$$
+P_k=pP_{k+1}+qP_{k-1}
+$$
+$$
+pP_k+qP_k=pP_{k+1}+qP_{k-1}
+$$
+$$
+P_{k+1}-P_k=\frac{q}{p}(P_k-P_{k-1})
+$$
+$$
+P_k-P_1=P_1[\frac{q}{p}+\frac{q}{p}^2+...+\frac{q}{p}^{k-1}]
+$$
+sub $P_N$=1
+$$
+P_k=\frac{1-(q/p)^k}{1-(q/p)^N}
+$$
+\section{W4C2}
+random variable is a variable that represents each outcome of a random experiment by a number.\\
+i.e. No. of heads after 10 coin tosses\\
+Probability mass function(pmf) of X is given by:
+$$
+p(a):=\mathbb P(X=a)
+$$
+cdf(cumulative distribution function) is defined as\\
+$$
+F(x):=\mathbb{P}(X\leq x)=\sum_{all a\leq x}p(a)
+$$
+Is a summation of all pmf below and equal to a\\
+maximum of 3 numbers obtained from 3 fair dice roll
+$$
+\mathbb{P}(M\leq i)=\frac{i^3}{6^3}
+$$
+$$
+p(i)=\mathbb{P}(M=i)=\mathbb{P}(M\leq i)-\mathbb{P}(M\leq i-1)
+$$
+$$
+=\frac{i^3}{6^3}-\frac{(i-1)^3}{6^3}
+$$
+Expected value is the mean.(sum of all values divide by n)\\
+Mean is sensitive to extremely large and small values while median is not\\
+Median is the sorted center value\\
+$$
+E(X)=\sum_{i=1}^n x_i\mathbb P(x=xi)=\sum_{i=1}^n x_ip(x_i)
+$$
+Theorem 1 of random variable\\
+$$
+E(g(x))=\sum_{i=1}^ng(x_i)p(x_i)
+$$
+A Useful result is
+$$
+E(aX+b)=a\mathbb E(X)+b
+$$
+\end{document}

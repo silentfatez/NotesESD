@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 
-\title{Math2}
+\title{Probability}
 \author{Keith Goh}
 \begin{document}
 \maketitle
@@ -237,4 +237,68 @@ A Useful result is
 $$
 E(aX+b)=a\mathbb E(X)+b
 $$
+For any (not necessarily independent)discrete random variables:
+$$
+\mathbb E(\sum_{i=1}^mX_i)=\sum_{i=1}^m\mathbb{E}(X_i)
+$$
+$$
+E(X)=\sum_{i\leq i,j \leq 6}(i+j)\frac{1}{6^2}=\frac{1}{6^2}\sum_{i=1}^6\sum_{j=1}^6(i+j)=\frac{1}{6}\sum_{i=1}^6i+\sum_{j=1}^6j
+$$
+$$
+\sum_{i=0}^{n-1}r^i=\frac{i-r^n}{1-r}
+$$
+differentiate both side by r
+$$
+\sum_{i=0}^{n-1}ir^{i-1}=\frac{1-r^n}{(1-r)^2}-\frac{nr^{n-1}}{1-r}
+$$
+$$
+Var(x):=\mathbb{E}((X-\mu)^2)
+$$
+$$
+Var(x)=E(X^2)-E(X)^2
+$$
+Hence
+$$
+Var(aX+b)=a^2var(X)
+$$
+\section{W5C2}
+Bernoulli if x only takes 2 values,1 or 0
+$$
+E(x=1)=p,E(x=0)=1-p
+$$
+$$
+E(x)=p, Var(x)=p-p^2=p(1-p)
+$$
+Binomial random variable, Suppose X is the number of successes in n independent Bernoulli trials, each with success p, X is also sum of n independent Bernoulli (p) random variables.\\
+
+X is called a binomial random variable
+$$
+\mathbb{P}(X=k)={n \choose k}p^k(1-p)^{n-k}
+$$
+$$
+\mathbb{E}(X)=np, Var(x)=np(1-p)
+$$
+
+Hypergeometric Random Variable \\
+choose exactly r men from a committee of men and women
+$$
+\mathbb{P}(X=r)=\frac{{n \choose r}{m \choose k-r}}{{n+m \choose k}}
+$$
+we can rewrite  $X=X_1+X_2+...X_k$
+where each $X_i$ is a Bernoulli random variable that equals 1 if the ith person chosen is a man.
+$$
+E(X)=\frac{kn}{n+m}
+$$
+$$
+Var(X)=\frac{kn}{n+m}(1-\frac{n}{n+m})\frac{n+m-k}{n+m-1}
+$$
+if without replacement restriction implicit in Hypergeometric then it becomes a binomial distribution. can be seen when n and m are large comared to k, selection of selecting a man can be approximated to $p:=\frac{n}{n+m}$\\
+For independent Bernoulli trials with probability of success p, let X be the number of trials needed for first success, then X is a Geometric
+$$
+\mathbb P(X=n)=(1-p)^{n-1}p
+$$
+$$
+E(X)=\frac{1}{p}, Var(X)=\frac{1-p}{p^2}
+$$
+So in summary Binomial is a summation of N independent Bernoulli trials, Hypergeometric is just Binomial without replacement,and Geometric is a multiplication of bernoulli trials due to conditional probability till first success
 \end{document}

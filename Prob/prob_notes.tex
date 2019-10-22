@@ -12,7 +12,7 @@
 \section{W1C1}
 Permutation
 $$
-nx(n-1)x...x(n-k+1)=\frac{n!}{n-k!}=:P^n_k
+nx(n-1)x...x(n-k+1)=\frac{n!}{(n-k)!}=:P^n_k
 $$
 This is the number of ways to choose and arrange k distinct objects from n distinct objects(order of picking matters)This is because we want them to fill up some unique positions\\
 permutation without repetition if there are identical objects then we must divide by the number of  identical factorial
@@ -53,7 +53,7 @@ $$
 Extra:\\
 Multinomial Theorem
 $$
-(x_1+x_2+x_3...x_k)^n=\sum_{B_1+b_2...b_k=n}{n \choose b_1,b_2,b_3,....b_k}\prod_{j=1}^kx^{b_j}_j
+(x_1+x_2+x_3...x_k)^n=\sum_{b_1+b_2...b_k=n}{n \choose b_1,b_2,b_3,....b_k}\prod_{j=1}^kx^{b_j}_j
 $$
 \section{w2c1}
 Axioms of probability
@@ -76,7 +76,7 @@ $$
 \section{W2C2}
 Hypergeometric distribution\\
 $$
-\mathbb {P}(\text{r men on a committee of k people})=\frac{{n \choose r}{m \choose k-r}}{{n+m \choose k}}
+\mathbb {P}(\text{r men on a committee of k people} out of n+m people)=\frac{{n \choose r}{m \choose k-r}}{{n+m \choose k}}
 $$
 Arithmetic Series
 $$
@@ -134,8 +134,7 @@ $$
 $$
 where
 $$
-\mathbb{P}{(B)}=\mathbb{P}(B|A)\mathbb{P}(A)+\mathbb{P}(B|A^c)\mathbb{P}A^c
-A|A$$
+\mathbb{P}{(B)}=\mathbb{P}(B|A)\mathbb{P}(A)+\mathbb{P}(B|A^c)\mathbb{P}(A^c)$$
 Independent
 $$
 \mathbb{P}(A|B)=\mathbb P (A)
@@ -203,7 +202,7 @@ P_k-P_1=P_1[\frac{q}{p}+\frac{q}{p}^2+...+\frac{q}{p}^{k-1}]
 $$
 sub $P_N$=1
 $$
-P_k=\frac{1-(q/p)^k}{1-(q/p)^N}
+P_k=\frac{1-(q/p)^k}{1-(q/p)^N}P_1
 $$
 \section{W4C2}
 random variable is a variable that represents each outcome of a random experiment by a number.\\
@@ -246,7 +245,7 @@ $$
 \mathbb E(\sum_{i=1}^mX_i)=\sum_{i=1}^m\mathbb{E}(X_i)
 $$
 $$
-E(X)=\sum_{i\leq i,j \leq 6}(i+j)\frac{1}{6^2}=\frac{1}{6^2}\sum_{i=1}^6\sum_{j=1}^6(i+j)=\frac{1}{6}\sum_{i=1}^6i+\sum_{j=1}^6j
+E(X)=\sum_{i\leq i,j \leq 6}(i+j)\frac{1}{6^2}=\frac{1}{6^2}\sum_{i=1}^6\sum_{j=1}^6(i+j)=\frac{1}{6}(\sum_{i=1}^6i+\sum_{j=1}^6j)
 $$
 $$
 \sum_{i=0}^{n-1}r^i=\frac{i-r^n}{1-r}

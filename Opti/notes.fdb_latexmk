@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1571591409 "notes.tex" "notes.pdf" "notes" 1571591410
+["pdflatex"] 1571591409 "notes.tex" "notes.pdf" "notes" 1571592130
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -51,6 +51,6 @@
   "notes.aux" 1571591410 1692 1821dfc811a9b3ce389526418e753d46 "pdflatex"
   "notes.tex" 1571591407 34001 74e882ea2330a987ccc068f79d633fb8 ""
   (generated)
-  "notes.aux"
   "notes.pdf"
   "notes.log"
+  "notes.aux"

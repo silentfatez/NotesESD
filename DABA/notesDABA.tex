@@ -179,12 +179,30 @@ Connect R to SQL\\
   getextract("SELECT FROM NEWEXTRACT Limit 20")
 \end{verbatim}
 \section{GIS}
+Geographical Information
+Systems\\
 GIS rmb longtitude is like length so x then latitude is like high so y\\
 \includegraphics{gis}
 \includegraphics{gis2}
 \section{functional modelling}
 \includegraphics{idef}
 \section{Timeseries}
+$$
+\hat{x_1}=x_1
+$$
+$$
+\hat{x_2}=ax_1+(1-\alpha)\hat{x_1}=x_1
+$$
+for double exponential
+$$
+\hat{x_{n+1}}=\hat{a_n}+\hat{b_n}
+$$
+$$
+\hat{a_{n+1}}=\alpha x_{n+1}+(1-\alpha)\hat{x_{n+1}}
+$$
+$$
+\hat{b_{n+1}}=\beta(\hat{a_{n+1}}-\hat{a_{n}})+(1-\beta)\hat{b_n}
+$$
 \begin{verbatim}
   hw <- HoltWinters(AirPassengers) #Holt-Winter
   hw <- HoltWinters(AirPassengers,gamma=False) #Holt2
@@ -215,4 +233,5 @@ Moving average has no trend, takes evenly from a couple of points.\\
 \section{Credits}
 http://www.sqltutorial.org/sql-cheat-sheet/\\
 https://www.w3schools.com/sql
+SUTD DaBA Slides
 \end{document}

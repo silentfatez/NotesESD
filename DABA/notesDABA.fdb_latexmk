@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1571737200 "notesDABA.tex" "notesDABA.pdf" "notesDABA" 1571737201
+["pdflatex"] 1571755715 "notesDABA.tex" "notesDABA.pdf" "notesDABA" 1571755716
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -28,6 +28,7 @@
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty" 1543581078 7612 729a8cc22a1ee0029997c7f74717ae05 ""
@@ -64,9 +65,9 @@
   "gis.png" 1571731974 327822 abc1c08c0fd0886dfd91c049e16abc58 ""
   "gis2.png" 1571732386 384824 d1340730067b12e309036c56cfbe76a0 ""
   "idef.png" 1571734592 111173 1fb3892271caed260579d16d2b0d3eb5 ""
-  "notesDABA.aux" 1571737201 672 a8d2b82dac951f628af58c801c09740d "pdflatex"
-  "notesDABA.tex" 1571737199 6759 41aada428501a700f6a8d33490168187 ""
+  "notesDABA.aux" 1571755716 672 94a11f82636c3cec5e8489e9dc4ac995 "pdflatex"
+  "notesDABA.tex" 1571755713 7089 c65c2a3be34a3df1ea805b249427af3e ""
   (generated)
-  "notesDABA.log"
   "notesDABA.aux"
   "notesDABA.pdf"
+  "notesDABA.log"

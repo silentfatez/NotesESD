@@ -132,6 +132,10 @@ Bayes' Law(Bae's)
 $$
 \mathbb{P}(A|B)=\frac{\mathbb{P}{(B|A)}\mathbb{P}{(A)}}{\mathbb{P}(B)}
 $$
+where
+$$
+\mathbb{P}{(B)}=\mathbb{P}(B|A)\mathbb{P}(A)+\mathbb{P}(B|A^c)\mathbb{P}A^c
+A|A$$
 Independent
 $$
 \mathbb{P}(A|B)=\mathbb P (A)
@@ -301,4 +305,24 @@ $$
 E(X)=\frac{1}{p}, Var(X)=\frac{1-p}{p^2}
 $$
 So in summary Binomial is a summation of N independent Bernoulli trials, Hypergeometric is just Binomial without replacement, the $X_i$ being Bernoulli random variables, and Geometric is a multiplication of Bernoulli trials due to conditional probability till first success
+Identity to know
+$$
+\frac{1}{k+1}{n \choose k}=\frac{1}{n+1}{n+1 \choose k+1}
+$$
+pmf of binomial
+$$
+{n \choose k}p^k(1-p)^{n-k}
+$$
+pmf of geometric
+$$
+(1-p^{n-1}p)
+$$
+when calculate new expectation use pmf of original function times how the expectation has changed summation it.\\
+eg. for binomial
+$$
+E(X)={n \choose k}p^k(1-p)^{n-k}
+$$
+$$
+E(\frac{1}{x+1})=\sum_{k=0}^n\frac{1}{k+1}\times {n \choose k}p^k(1-p)^{n-k}
+$$
 \end{document}

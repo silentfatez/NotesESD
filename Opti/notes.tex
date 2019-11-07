@@ -52,14 +52,14 @@ $$
 Converting to standard form\\
 For free variables split into 2 variables plus variable 1 for the postive variable and minus negative variable 2\\
 To convert from $\geq$ or $\leq$ to equal we add surplus/slack variables\\
-+ the variable if it is $\geq$\\
-- the variable if it is $\leq$\\
+- the variable if it is $\geq$\\
++ the variable if it is $\leq$\\
 making sure all variables are $\geq$ 0 by introducing negative to flip the sign if neccesary\\
 RHS variables must be positive\\
-adding artificial varibles(more for to make into canonical)\\
+adding artificial variables(more for to make into canonical)\\
 
 \begin{enumerate}
-  \item A $x^*$ = b, and
+  \item $A x^*$ = b, and
   \item there exists indices $B_1$, $B_2$,...$B_m$ such that:
   \begin{enumerate}
     \item  The m columns of matrix A, $A_{B1}$,$A_{B2}$,..., and $A_{B_m}$, are linearly independent;
@@ -89,6 +89,9 @@ $$
 can be changed to
 $$
 x_1 + x_2 - x_3 - x_4 \leq 5
+$$
+and
+$$
 -x_1 - x_2 + x_3 + x_4 \leq 5
 $$
 Original equation:
